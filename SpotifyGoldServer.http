@@ -1,0 +1,6 @@
+@SpotifyGoldServer_HostAddress = http://localhost:5265
+
+GET {{SpotifyGoldServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
