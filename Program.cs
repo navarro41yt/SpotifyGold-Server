@@ -27,7 +27,7 @@ public class Program
         app.Lifetime.ApplicationStarted.Register(() => {
             Task.Run(async () => {
                 while (true) {
-                    IO.cleanTempFolder(TimeSpan.FromDays(7));
+                    PathUtils.CleanTempFolder(TimeSpan.FromDays(7));
                     await Task.Delay(TimeSpan.FromHours(1));
                 }
             });
