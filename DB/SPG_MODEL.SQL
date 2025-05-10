@@ -1,7 +1,8 @@
 DROP DATABASE IF EXISTS SPG;
 CREATE DATABASE SPG
     DEFAULT CHARACTER SET utf8mb4
-    DEFAULT COLLATE utf8mb4_general_ci;
+    DEFAULT COLLATE utf8mb4_general_ci
+;
 
 USE SPG;
 
@@ -11,7 +12,6 @@ CREATE TABLE channel (
     Name VARCHAR(255) NOT NULL,
     Description TEXT NOT NULL DEFAULT ''
 );
-
 
 DROP TABLE IF EXISTS video;
 CREATE TABLE video (
